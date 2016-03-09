@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<style>
+.container{
+	
+	width: 200px;
+	height: 100px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	text-align: center;
+	padding: 45px;
+	border-sizing: border-box;
+	font-size: 40px;
+	justify-content: center;
+	border: 2px solid yellow;
+
+}
+</style>
+</head>
+<body>
+<div class="container" id="demo1" style="background-color: skyblue;" onclick="myFunction()">LIKE</div>
+<script>
+function myFunction(){
+	
+	var r = document.getElementById("demo1").innerHTML;
+
+	if(r === 'LIKE')
+	{
+
+		document.getElementById("demo1").style.backgroundColor = "orange";
+		document.getElementById("demo1").innerHTML = "UNLIKE";
+
+	}
+	else
+	{
+		document.getElementById("demo1").style.backgroundColor = "skyblue";
+		document.getElementById("demo1").innerHTML = "LIKE";
+
+	}
+
+
+
+}
+
+</script>
+</body>
+</html>
